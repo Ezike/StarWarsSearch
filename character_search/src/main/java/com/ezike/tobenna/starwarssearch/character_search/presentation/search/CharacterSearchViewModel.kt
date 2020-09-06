@@ -5,7 +5,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.ezike.tobenna.starwarssearch.character_search.presentation.SearchStateMachine
 import com.ezike.tobenna.starwarssearch.character_search.presentation.search.mvi.SearchViewState
-import com.ezike.tobenna.starwarssearch.character_search.ui.search.LoadSearchHistory
 import com.ezike.tobenna.starwarssearch.presentation.mvi.MVIPresenter
 import com.ezike.tobenna.starwarssearch.presentation.mvi.ViewIntent
 import kotlinx.coroutines.flow.StateFlow
@@ -20,7 +19,6 @@ class CharacterSearchViewModel @ViewModelInject constructor(
         get() = searchStateMachine.viewState
 
     init {
-        processIntent(LoadSearchHistory)
         searchStateMachine.processor.launchIn(viewModelScope)
     }
 
