@@ -2,11 +2,9 @@ package com.ezike.tobenna.starwarssearch.character_search.views.search
 
 import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
-import com.ezike.tobenna.starwarssearch.character_search.R
 import com.ezike.tobenna.starwarssearch.character_search.databinding.LayoutSearchResultBinding
 import com.ezike.tobenna.starwarssearch.character_search.model.CharacterModel
 import com.ezike.tobenna.starwarssearch.character_search.ui.search.adapter.SearchResultAdapter
-import com.ezike.tobenna.starwarssearch.core.ext.getImage
 import com.ezike.tobenna.starwarssearch.presentation.mvi.DispatchIntent
 import com.ezike.tobenna.starwarssearch.presentation.mvi.ViewIntent
 import com.ezike.tobenna.starwarssearch.presentation.mvi.ViewState
@@ -63,7 +61,6 @@ class SearchResultView(
             emptyState.isVisible =
                 state.isVisible && !state.isSearching && state.characters.isEmpty() && state.error == null
             errorState.isVisible = state.isVisible && !state.isSearching && state.error != null
-            errorState.setImage(root.context.getImage(R.drawable.ic_error_page_2))
             errorState.setCaption(state.error)
         }
     }
