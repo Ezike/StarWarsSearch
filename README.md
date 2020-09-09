@@ -8,6 +8,8 @@ Resources here: [Blog](https://netflixtechblog.com/making-our-android-studio-app
 
 For a fuller implementation, check out this [branch](https://github.com/Ezike/StarWarsSearch/tree/Feature/render_loop)
 
+You can also check this [branch](https://github.com/Ezike/StarWarsSearch/tree/master) for a different approach to the project
+
 You can check out my thought process in this [file](https://github.com/Ezike/StarWarsSearch/blob/componentize/process.md)
 
 ## Features
