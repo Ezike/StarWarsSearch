@@ -2,11 +2,13 @@
 
 # Star Wars search
 
-Hey there 👋🏼👋🏼👋🏼, You can check out my thought process in this [file](https://github.com/Ezike/StarWarsSearch/blob/componentize/process.md)
+Hey there 👋🏼👋🏼👋🏼
 This branch introduces some of the basic ideas on Componentization as shown by the UI Engineering team at Netflix.
 Resources here: [Blog](https://netflixtechblog.com/making-our-android-studio-apps-reactive-with-ui-components-redux-5e37aac3b244), [Repo](https://github.com/julianomoraes/componentizationArch)
 
 For a fuller implementation, check out this [branch](https://github.com/Ezike/StarWarsSearch/tree/Feature/render_loop)
+
+You can check out my thought process in this [file](https://github.com/Ezike/StarWarsSearch/blob/componentize/process.md)
 
 ## Features
 * Clean Architecture with MVI (Uni-directional data flow)
